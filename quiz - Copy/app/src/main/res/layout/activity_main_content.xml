@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainContent"
+    android:padding="24dp"
+    android:background="@drawable/img"
+    >
+
+
+
+    <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Questions"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textSize="35dp"
+        />
+    <TextView
+        android:id="@+id/timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="0:20"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/total_question"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this will be the question"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_above="@id/answer"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/answer"
+        >
+
+
+        <Button
+            android:id="@+id/A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ans A" />
+        <Button
+            android:id="@+id/B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ans B" />
+        <Button
+            android:id="@+id/C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ans C" />
+        <Button
+            android:id="@+id/D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Ans D" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/answer"
+        android:layout_margin="30dp"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/timing"
+        android:layout_below="@id/total_question"
+        android:text="Time : " />
+
+
+</RelativeLayout>
